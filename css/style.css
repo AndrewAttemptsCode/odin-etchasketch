@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.squaresContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 512px;
+    /* temp padding */
+    padding-top: 16px;
+}
+
+.square {
+    height: 32px;
+    width: 32px;
+    border: 1px solid black;
+}
