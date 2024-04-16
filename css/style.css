@@ -30,3 +30,8 @@ body {
     width: 32px;
     border: 1px solid black;
 }
+
+.square:hover {
+    cursor: pointer;
+    background: black;
+}
