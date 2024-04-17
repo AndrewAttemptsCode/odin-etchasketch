@@ -1,6 +1,12 @@
 const container = document.querySelector(".squaresContainer");
 let isMouseDown = false;
 
+// Resize grid button
+const buttonResize = document.createElement("button");
+buttonResize.classList.add("buttonResize");
+buttonResize.textContent = "Resize Grid";
+document.body.appendChild(buttonResize);
+
 // Creates 16 by 16 div grid
 for (let i = 0; i < 16; i++) {
     for (let j = 0; j < 16; j++) {
