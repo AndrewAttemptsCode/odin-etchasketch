@@ -25,7 +25,9 @@ body {
     flex-wrap: wrap;
     width: 514px;
     height: 514px;
+    margin-bottom: 20px;
     border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .square {
@@ -35,4 +37,20 @@ body {
 .square:hover {
     cursor: pointer;
     background: black;
+}
+
+.buttonResize {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background: rgb(42, 146, 42);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+.buttonResize:hover {
+    cursor: pointer;
+    background: rgba(42, 146, 42, 0.733);
 }
