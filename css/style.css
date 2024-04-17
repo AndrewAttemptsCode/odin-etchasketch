@@ -59,3 +59,8 @@ body {
 .buttonSelect {
     background-color: rgb(26, 92, 26);
 }
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+}
