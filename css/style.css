@@ -38,7 +38,8 @@ body {
     cursor: pointer;
 }
 
-.buttonResize {
+.buttonResize,
+.buttonRainbow {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -52,4 +53,8 @@ body {
 .buttonResize:hover {
     cursor: pointer;
     background: rgba(42, 146, 42, 0.733);
+}
+
+.buttonSelect {
+    background-color: rgb(26, 92, 26);
 }
