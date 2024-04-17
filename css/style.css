@@ -1,6 +1,8 @@
 html,
 body {
     margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 body {
@@ -21,15 +23,13 @@ body {
 .squaresContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 512px;
-    /* temp padding */
-    padding-top: 16px;
+    width: 514px;
+    height: 514px;
+    border: 2px solid black;
 }
 
 .square {
-    height: 32px;
-    width: 32px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.295);
 }
 
 .square:hover {
