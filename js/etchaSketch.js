@@ -20,11 +20,17 @@ buttonResize.addEventListener("click", () => {
 function createGrid(gridSize) {
     // Clears contents of the container
     container.innerHTML = "";
+
+    // Generates square size based on container size 
+    const squareSize = (100 / gridSize) + "%";
+
     // Creates div grid based on user input
     for (let i = 0; i < gridSize; i++) {
         for (let j = 0; j < gridSize; j++) {
             const square = document.createElement("div");
             square.classList.add("square");
+            square.style.width = squareSize;
+            square.style.height = squareSize;
             container.appendChild(square);
         }
     }
