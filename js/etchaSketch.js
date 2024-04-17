@@ -1,11 +1,15 @@
 const container = document.querySelector(".squaresContainer");
+const buttonContainer = document.createElement("div");
+buttonContainer.classList.add("buttonContainer");
+document.body.appendChild(buttonContainer);
+
 let isMouseDown = false;
 
 // Resize grid button
 const buttonResize = document.createElement("button");
 buttonResize.classList.add("buttonResize");
 buttonResize.textContent = "Resize Grid";
-document.body.appendChild(buttonResize);
+buttonContainer.appendChild(buttonResize);
 
 buttonResize.addEventListener("click", () => {
     let gridSize = +prompt("Enter a new grid size (1-100): ");
@@ -89,7 +93,7 @@ function generateRandomColor() {
 const buttonRainbow = document.createElement("button");
 buttonRainbow.classList.add("buttonRainbow");
 buttonRainbow.textContent = "Rainbow Mode";
-document.body.appendChild(buttonRainbow);
+buttonContainer.appendChild(buttonRainbow);
 
 // Rainbow event listener
 
