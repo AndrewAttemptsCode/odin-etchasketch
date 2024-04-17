@@ -49,20 +49,30 @@ container.addEventListener("mouseup", () => {
 });
 
 container.addEventListener("mousemove", (event) => {
-    if (isMouseDown) {
+    if (isMouseDown && rainbowModeActive) {
         if (event.target.classList.contains("square")) {
+            event.target.style.backgroundColor = generateRandomColor();
+        }
+        } else if (isMouseDown) {
+            if (event.target.classList.contains("square")) {
             event.target.style.backgroundColor = "black";
         }
     }
 });
 
 container.addEventListener("click", (event) => {
-    if (!isMouseDown) {
+    if (!isMouseDown && rainbowModeActive) {
+        if (event.target.classList.contains("square")) {
+            event.target.style.backgroundColor = generateRandomColor();
+        }
+    } else if (!isMouseDown) {
         if (event.target.classList.contains("square")) {
             event.target.style.backgroundColor = "black";
         }
     }
 });
+
+// Rainbow option section //
 
 // Generate random color
 function generateRandomColor() {
@@ -75,4 +85,20 @@ function generateRandomColor() {
     return rgbColor;
 }
 
-const randomColor = generateRandomColor();
+// Rainbow button
+const buttonRainbow = document.createElement("button");
+buttonRainbow.classList.add("buttonRainbow");
+buttonRainbow.textContent = "Rainbow Mode";
+document.body.appendChild(buttonRainbow);
+
+// Rainbow event listener
+
+buttonRainbow.addEventListener("click", toggleRainbow);
+
+// Toggle rainbow function
+
+let rainbowModeActive = false;
+
+function toggleRainbow() {
+    rainbowModeActive = !rainbowModeActive;
+}
