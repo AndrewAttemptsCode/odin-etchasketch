@@ -95,6 +95,10 @@ document.body.appendChild(buttonRainbow);
 
 buttonRainbow.addEventListener("click", toggleRainbow);
 
+buttonRainbow.addEventListener("click", () => {
+    buttonRainbow.classList.toggle("buttonSelect");
+});
+
 // Toggle rainbow function
 
 let rainbowModeActive = false;
