@@ -21,7 +21,7 @@ function createGrid(gridSize) {
     // Clears contents of the container
     container.innerHTML = "";
 
-    // Generates square size based on container size 
+    // Calculate square size based on container size 
     const squareSize = (100 / gridSize) + "%";
 
     // Creates div grid based on user input
@@ -63,3 +63,16 @@ container.addEventListener("click", (event) => {
         }
     }
 });
+
+// Generate random color
+function generateRandomColor() {
+    const r = Math.floor(Math.random() * 255) + 1;
+    const g = Math.floor(Math.random() * 255) + 1;
+    const b = Math.floor(Math.random() * 255) + 1;
+
+    const rgbColor = `rgb(${r}, ${g}, ${b})`;
+
+    return rgbColor;
+}
+
+const randomColor = generateRandomColor();
