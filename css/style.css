@@ -50,7 +50,8 @@ body {
     padding: 8px 16px;
 }
 
-.buttonResize:hover {
+.buttonResize:hover,
+.buttonRainbow:hover {
     cursor: pointer;
     background: rgba(42, 146, 42, 0.733);
 }
