@@ -39,7 +39,8 @@ body {
 }
 
 .buttonResize,
-.buttonRainbow {
+.buttonRainbow,
+.buttonClear {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -51,7 +52,8 @@ body {
 }
 
 .buttonResize:hover,
-.buttonRainbow:hover {
+.buttonRainbow:hover,
+.buttonClear:hover {
     cursor: pointer;
     background: rgba(42, 146, 42, 0.733);
 }
