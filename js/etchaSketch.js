@@ -1,7 +1,13 @@
 const container = document.querySelector(".squaresContainer");
+
 const buttonContainer = document.createElement("div");
 buttonContainer.classList.add("buttonContainer");
 document.body.appendChild(buttonContainer);
+
+const titleText = document.createElement("div");
+titleText.classList.add("titleText");
+titleText.textContent = "Sketch Pad";
+document.body.prepend(titleText);
 
 let isMouseDown = false;
 
