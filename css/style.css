@@ -68,6 +68,9 @@ body {
 .titleText {
     font-family: "Jersey 20 Charted", sans-serif;
     font-weight: 400;
+    font-size: 90px;
     font-style: normal;
+    margin-bottom: 20px;
+    color: rgb(26, 92, 26);
 }
   
