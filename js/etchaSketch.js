@@ -116,3 +116,17 @@ let rainbowModeActive = false;
 function toggleRainbow() {
     rainbowModeActive = !rainbowModeActive;
 }
+
+// Clear grid button and function
+
+const buttonClear = document.createElement("button");
+buttonClear.classList.add("buttonClear");
+buttonClear.textContent = "Clear";
+buttonContainer.appendChild(buttonClear);
+
+buttonClear.addEventListener("click", () => {
+    const squares = document.querySelectorAll(".square");
+    squares.forEach(square => {
+        square.style.backgroundColor = "";
+    });
+});
